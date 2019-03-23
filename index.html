@@ -6,64 +6,69 @@ and open the template in the editor.
 -->
 <html>
     <head>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Lifestyle Store</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="header">
-            <div class="inner-header">
-                <div class="logo">
-                    <a href="">Lifestyle Stores</a>
-                </div>
-                <div class="link">
-                    <a href="">Login</a>
-                </div>
-                <div class="link">
-                    <a href="">sign up</a>
-                </div>
-            </div>   
-        </div>
-        <div class="context">
-            <div class="banner">
-                <center>
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="index.html">Lifestyle Store</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right opt">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <center>
                 <div class="inner-banner">
                     <div class="banner-context">
                         <h1>We sell lifestyle</h1>
                         <p>40% OFF on premium brands</p><br>
-                        <a class="button" href="">shop Now</a>
+                        <a class="btn btn-danger btn-lg active" href="product.html">Shop Now</a>
                     </div>>
                 </div>
-                </center>
-            </div>
+            </center>
         </div>
         <div class="container">
-            <div class="items">
-                <a href="#" >
-                    <img src="./image/camera.jpg" alt="" class="thumbnail">
-                    <div class="caption">
-                        <h2>Cameras</h2>
-                        <p>Choose among the best available in the world.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="items">
-                <a href="#" >
-                    <img src="./image/watch.jpg" alt="" class="thumbnail">
-                    <div class="caption">
-                        <h2>Watches</h2>
-                        <p>Original watches from the best brands.</p>
-                    </div>
-                   
-                </a>
-            </div>
-            <div class="items">
-                <a href="#" >
-                 <img src="./image/shirt.jpg" alt="" class="thumbnail">
-                    <div class="caption">
-                        <h2>Shirts</h2>
-                        <p>Our exquisite collections of shirts.</p>
-                    </div>
-                </a>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="product.html" class="thumbnail">
+                        <img src="image/camera.jpg" alt="">
+                        <div class="caption">
+                            <h2>Cameras</h2>
+                            <p>Choose among the best available in the world.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="product.html" class="thumbnail">
+                        <img src="./image/watch.jpg" alt="">
+                        <div class="caption">
+                            <h2>Watches</h2>
+                            <p>Original watches from the best brands.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="product.html" class="thumbnail">
+                        <img src="./image/shirt.jpg" alt="">
+                        <div class="caption">
+                            <h2>Shirts</h2>
+                            <p>Our exquisite collections of shirts.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <footer>
@@ -72,7 +77,6 @@ and open the template in the editor.
                     <p>Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 90000 00000</p>
                 </center>
             </div>
-        </footer>>
+        </footer>
     </body>
 </html>
-
